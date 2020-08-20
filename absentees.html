@@ -11,14 +11,17 @@
 <body>
     <header>
         <section id="container">
-            <input type="number" name="text" id="inputText" placeholder="Present students" required />
-            <button onclick="pushData()">Add present students</button>
-            <p>Present Students Roll No:</p>
-            <p id="pText"></p>
-            <button onclick="findMissingNumbers()">Find Absent students</button>
+            <div class="content-container">
+                <h1 class="heading">Find Absent students</h1>
+                <input type="number" name="text" id="inputText" placeholder="Present students" required />
+                <button onclick="pushData()" class="addbtn">Add present students</button>
+                <p class="subHeading1">Present Students Roll No:</p>
+                <p id="pText"></p>
+                <button onclick="findMissingNumbers()">Find Absent students</button>
 
-            <p>Below are Absent students number</p>
-            <p id="missingrollnum"></p>
+                <p class="subHeading2">Below are Absent students number</p>
+                <p id="missingrollnum"></p>
+            </div>
 
         </section>
     </header>

@@ -12,7 +12,7 @@ function pushData() {
     var pval = "";
 
     for (i = 0; i < numArr.length; i++) {
-        pval = pval + numArr[i] + "<br/>";
+        pval = pval + numArr[i] + ", ";
     }
 
     // display array data
