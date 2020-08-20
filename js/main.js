@@ -4,8 +4,8 @@
 
 // create an array
 var numArr = [];
-numArr.length = 4;
 var missing = [];
+
 
 function pushData() {
     // get value from the input text
@@ -23,7 +23,9 @@ function pushData() {
     // display array data
 
     document.getElementById('pText').innerHTML = pval;
+    missingroll();
 }
+
 
 function missingroll() {
     for (let i in numArr) {

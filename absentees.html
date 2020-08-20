@@ -3,17 +3,24 @@
 
 <head>
     <title>Attendance assistance</title>
+
+    <!-- // linked csss -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-   
-    <input type="text" name="text" id="inputText" />
-    <button onclick="pushData();">Enter</button>
-    <p id="pText"></p>
-    <p id="missingrollnum"></p>
+<header>
+    <section id="container">
+        <input type="number" name="text" id="inputText" required />
+        <button onclick="pushData()">Finding Absent Students</button>
+        <p id="pText"></p>
+        <p>Below are Absent students number</p>
+        <p id="missingrollnum"></p>
 
-
+    </section>
+</header>
     <!-- Linked JavaScript file ------------>
     <script src="js/main.js"></script>
 </body>
+
 </html>
