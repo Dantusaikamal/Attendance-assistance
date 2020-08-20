@@ -9,16 +9,21 @@
 </head>
 
 <body>
-<header>
-    <section id="container">
-        <input type="number" name="text" id="inputText" required />
-        <button onclick="pushData()">Finding Absent Students</button>
-        <p id="pText"></p>
-        <p>Below are Absent students number</p>
-        <p id="missingrollnum"></p>
+    <header>
+        <section id="container">
+            <input type="number" name="text" id="inputText" placeholder="Present students" required />
+            <button onclick="pushData()">Add present students</button>
+            <p>Present Students Roll No:</p>
+            <p id="pText"></p>
+            <button onclick="findMissingNumbers()">Find Absent students</button>
 
-    </section>
-</header>
+            <p>Below are Absent students number</p>
+            <p id="missingrollnum"></p>
+
+        </section>
+    </header>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Linked JavaScript file ------------>
     <script src="js/main.js"></script>
 </body>

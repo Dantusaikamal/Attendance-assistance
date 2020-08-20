@@ -1,11 +1,6 @@
-// const numArr = [3, 4, 7, 8,11,30];
-// const missing = [];
 
-
-// create an array
+// Creating an array to get present student roll numbers
 var numArr = [];
-var missing = [];
-
 
 function pushData() {
     // get value from the input text
@@ -23,26 +18,19 @@ function pushData() {
     // display array data
 
     document.getElementById('pText').innerHTML = pval;
-    missingroll();
+    console.log(numArr);
 }
 
-
-function missingroll() {
-    for (let i in numArr) {
-
-        // get the size of the gap
-        let x = numArr[i] - numArr[i - 1];
-        // start filling in the gap with `1`
-        let diff = 1;
-        // while there's still a gap, push the correct numbers
-        // into `missing`, calculated by the number + diff
-        while (diff < x) {
-            missing.push(numArr[i - 1] + diff);
-            diff++;
+function findMissingNumbers() {
 
 
-            console.log(missing);
-            document.getElementById("missingrollnum").innerHTML = missing;
-        }
-    }
+    var N = Array.from(Array(Math.max.apply(Math, numArr)).keys()); //Generate number array using the largest int from X
+
+    Array.prototype.diff = function (a) {
+        return this.filter(function (i) { return a.indexOf(i) < 0; }); //Return the difference
+    };
+
+    document.getElementById("missingrollnum").innerHTML =  (N.diff(numArr));
+
 }
+
