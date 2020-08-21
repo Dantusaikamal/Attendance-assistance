@@ -1,6 +1,4 @@
-
-// var numArr = [];
-
+// This function is used to push the data from the textbox to an array
 function pushData() {
     // get value from the input text
     var inputText = document.getElementById('inputText').value;
@@ -19,21 +17,16 @@ function pushData() {
     document.getElementById('pText').innerHTML = pval;
     console.log(numArr);
 }
-function findMissingNumbers(arr) {
-    // Create sparse array with a 1 at each index equal to a value in the input.
-    var sparse = arr.reduce((sparse, i) => (sparse[i] = 1, sparse), []);
-    // Create array 0..highest number, and retain only those values for which
-    // the sparse array has nothing at that index (and eliminate the 0 value).
-    return [...sparse.keys()].filter(i => i && !sparse[i]);
-}
+// This function is used to
+    let missingNumbers = (a, l=true) => Array.from(Array(Math.max(...a)).keys()).map((n, i) => a.indexOf(i) < 0  && (!l || i > Math.min(...a)) ? i : null).filter(f=>f);
 
 // Creating an array to get present student roll numbers
 var numArr = [];
 
-// callng this when button clicked
+// calling this when button is clicked
 function result() {
 
-    var result = findMissingNumbers(numArr);
+    var result = missingNumbers(numArr);
 
     document.getElementById("missingrollnum").innerHTML = result;
 
