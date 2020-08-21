@@ -3,74 +3,93 @@
   padding: 0;
 }
 
-body {
-  background-color: #242582;
-}
-
 header {
+  background-color: #242582;
   height: 100vh;
   width: 100%;
-}
-
-#container {
-  width: 60%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.content-container {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.content-container .heading {
-  color: #fff;
-  font-size: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: sans-serif;
-  font-weight: bold;
-  padding: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.content-container #inputText {
-  width: 61%;
-  height: 20px;
-  padding: 16px;
+#container {
+  width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: green;
+}
+
+#container .content-container .heading {
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+  margin: 50px;
+}
+
+#container .content-container #inputText {
+  width: 460px;
+  padding: 20px 10px 20px 20px;
   font-size: 16px;
   font-weight: 600;
-  outline: none;
+  margin-bottom: 50px;
 }
 
-.content-container .addbtn {
-  height: 53px;
-  padding: 16px;
-  font-size: 16px;
-  -webkit-transform: translateX(-12px);
-          transform: translateX(-12px);
+#container .content-container .addbtn {
+  width: 200px;
+  padding: 20px;
+  height: 64px;
+  background-color: #F64c72;
   border: none;
   outline: none;
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
   cursor: pointer;
-  background-color: #F64C72;
-  color: #fff;
-  font-weight: 600;
 }
 
-.content-container .addbtn:hover {
-  background-color: #f73660;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+#container .content-container .addbtn:hover {
+  background-color: #f7345e;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.content-container .subHeading1 {
+#container .content-container .subHeading1 {
   color: #fff;
-  margin-top: 50px;
+  font-size: 25px;
   font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#container .content-container .pText {
+  background-color: red;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+}
+
+#container .content-container .findbtn {
+  background-color: green;
+  padding: 20px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Chrome, Safari, Edge, Opera */
