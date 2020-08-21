@@ -18,7 +18,7 @@ function pushData() {
     console.log(numArr);
 }
 // This function is used to
-    let missingNumbers = (a, l=true) => Array.from(Array(Math.max(...a)).keys()).map((n, i) => a.indexOf(i) < 0  && (!l || i > Math.min(...a)) ? i : null).filter(f=>f);
+let missingNumbers = (a, l = true) => Array.from(Array(Math.max(...a)).keys()).map((n, i) => a.indexOf(i) < 0 && (!l || i > Math.min(...a)) ? i : null).filter(f => f);
 
 // Creating an array to get present student roll numbers
 var numArr = [];

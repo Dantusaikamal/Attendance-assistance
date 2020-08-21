@@ -3,69 +3,87 @@
   padding: 0;
 }
 
-body {
-  background-color: #242582;
-}
+//variables for colors
+$bgcolor : #242582;
+$primar-color : #F64c72;
+$secondar-color: #f7345e;
+
 
 header {
+  background-color: $bgcolor;
   height: 100vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #container {
-  width: 60%;
-  // background-color: yellowgreen;
-  margin-right: auto;
-  margin-left: auto;
-}
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
 
-.content-container{
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  // background-color: red;
+  .content-container {
   
-  .heading{
-    color: #fff;
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    font-family: sans-serif;
-    font-weight: bold;
-    padding: 30px;
-  }
-  #inputText {
-    width: 61%;
-    height: 20px;
-    padding: 16px;
-    font-size: 16px;
-    font-weight: 600;
-    outline: none;
-    
-    
-  }
-  .addbtn{
-    height: 53px;
-    padding: 16px;
-    font-size: 16px;
-    transform: translateX(-12px);
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background-color: #F64C72;
-    color: #fff;
-    font-weight: 600;
-    
-    &:hover{
-      background-color:#f73660;
-      transition-duration: 0.5s;
+
+    .heading {
+      color: white;
+      font-size: 50px;
+      font-weight: 600;
+      text-align: center;
+      margin: 50px;
     }
-    
-  }
-  .subHeading1{
-    color: #fff;
-    margin-top: 50px;
-    font-weight: 600;
+
+    #inputText {
+      width: 460px;
+      padding: 20px 10px 20px 20px;
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 50px;
+    }
+    .addbtn{
+      width: 200px;
+      padding: 20px;
+      height: 64px;
+      background-color: $primar-color;
+      border: none;
+      outline: none;
+      transform: translateX(-20px);
+      font-size: 15px;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+
+
+      &:hover{
+        background-color: $secondar-color;
+        transition: 0.5s;
+      }
+    }
+    .subHeading1{
+      color: #fff;
+      font-size: 25px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .pText{
+      background-color: red;
+      width: 100%;
+      height: 50px;
+      padding: 10px;
+    }
+    .findbtn{
+      background-color: green;
+      padding: 20px;
+      width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+
   }
 }
 
