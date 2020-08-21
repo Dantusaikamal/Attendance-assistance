@@ -23,10 +23,10 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: green;
+  // background-color: green;
 
   .content-container {
-  
+
 
     .heading {
       color: white;
@@ -42,8 +42,12 @@ header {
       font-size: 16px;
       font-weight: 600;
       margin-bottom: 50px;
+      border-bottom-left-radius: 16px;
+      outline: none;
+      border: none;
     }
-    .addbtn{
+
+    .addbtn {
       width: 200px;
       padding: 20px;
       height: 64px;
@@ -55,27 +59,44 @@ header {
       font-weight: 600;
       color: #fff;
       cursor: pointer;
+      border-top-right-radius: 16px;
 
 
-      &:hover{
+
+      &:hover {
         background-color: $secondar-color;
         transition: 0.5s;
       }
     }
-    .subHeading1{
+
+    .subHeading1 {
       color: #fff;
       font-size: 25px;
       font-weight: 600;
       margin-bottom: 15px;
       text-align: center;
     }
-    .pText{
-      background-color: red;
-      width: 100%;
-      height: 50px;
-      padding: 10px;
+    .subHeading2{
+      color: #fff;
+      font-size: 25px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      text-align: center;
     }
-    .findbtn{
+
+    .para {
+      width: 674px;
+      height: 60px;
+      background-color: white;
+      margin-bottom: 20px;
+      border-top-left-radius: 16px;
+      border-bottom-right-radius: 16px;
+      padding: 10px;
+
+      
+    }
+
+    .findbtn {
       background-color: green;
       padding: 20px;
       width: 200px;
