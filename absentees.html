@@ -3,7 +3,7 @@
 
 <head>
     <title>Attendance assistance</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- // linked csss -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,18 +13,26 @@
         <section id="container">
             <div class="content-container">
                 <h1 class="heading">Find Absent students</h1>
+
+
                 <input type="number" name="text" id="inputText" placeholder="Present students" required />
                 <button onclick="pushData()" class="addbtn">Add present students</button>
                 <p class="subHeading1">Present Students Roll No:</p>
+
+
                 <div class="para">
-                <p id="pText"></p>
+                    <p id="pText"></p>
                 </div>
-                <button onclick="result()" class="findbtn">Find Absent students</button>
+                <div class="btn_container">
+                    <button onclick="result()" class="findbtn">Find Absent students</button>
+                    <button onclick="reset()" class="resetbtn">Click to reset</button>
+
+                </div>
 
                 <p class="subHeading2">Absent students Roll No: </p>
-                <div class="para">
-                <p id="missingrollnum"></p>
-                    </div>
+                <div class="para" id="para">
+                    <p id="missingrollnum"></p>
+                </div>
             </div>
 
         </section>

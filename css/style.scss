@@ -9,6 +9,21 @@ $primar-color : #F64c72;
 $secondar-color: #f7345e;
 
 
+// btn properties
+@mixin btn {
+  background-color: green;
+  padding: 20px;
+  width: 220px;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
 header {
   background-color: $bgcolor;
   height: 100vh;
@@ -23,10 +38,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  // background-color: green;
 
   .content-container {
-
 
     .heading {
       color: white;
@@ -76,7 +89,8 @@ header {
       margin-bottom: 15px;
       text-align: center;
     }
-    .subHeading2{
+
+    .subHeading2 {
       color: #fff;
       font-size: 25px;
       font-weight: 600;
@@ -93,17 +107,39 @@ header {
       border-bottom-right-radius: 16px;
       padding: 10px;
 
-      
+    }
+    #para{
+      margin-bottom: 50px;
     }
 
-    .findbtn {
-      background-color: green;
-      padding: 20px;
-      width: 200px;
-      margin-left: auto;
-      margin-right: auto;
+    .btn_container {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 20px;
 
+      .findbtn {
+        @include btn;
+        background-color: rgb(206, 0, 206);
+
+        &:hover{
+          background-color: rgb(255, 0, 255);
+
+        }
+      }
+
+      .resetbtn {
+        @include btn;
+        background-color: rgb(207, 0, 0);
+
+        &:hover {
+          background-color: rgb(255, 0, 0);
+          transition: 0.5s;
+
+        }
+
+      }
     }
+
 
   }
 }
