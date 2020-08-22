@@ -13,8 +13,8 @@ function pushData() {
     }
 
     // display array data
+    document.getElementById('pText').innerHTML = "<b>" + pval;
 
-    document.getElementById('pText').innerHTML = pval;
     console.log(numArr);
 }
 // This function is used to
@@ -27,7 +27,26 @@ var numArr = [];
 function result() {
 
     var result = missingNumbers(numArr);
+    document.getElementById("missingrollnum").innerHTML = "<b>" + result ;
 
-    document.getElementById("missingrollnum").innerHTML = result;
+}
 
+
+// Function to reset 
+function reset(){
+    // remove array elements
+     while(numArr.length > 0){
+         numArr.pop();
+     }
+
+     // removing textbox content
+     document.getElementById("inputText").value = "";
+
+     // removing present student roll no content
+     document.getElementById("pText").innerHTML = "";
+
+     // removing absent students roll no content
+     document.getElementById("missingrollnum").innerHTML = "";
+
+     console.log(numArr);
 }
