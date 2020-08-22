@@ -12,8 +12,11 @@ function pushData() {
         pval = pval + numArr[i] + ", ";
     }
 
-    // display array data
+    // display array data in pText box
     document.getElementById('pText').innerHTML = "<b>" + pval;
+
+    // remove value from textbox after data is pushed in an array
+    document.getElementById("inputText").value = "";
 
     console.log(numArr);
 }
