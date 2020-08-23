@@ -3,7 +3,10 @@ function pushData() {
     // get value from the input text
     var inputText = document.getElementById('inputText').value;
 
-    // append data to the array
+    if(inputText == ""){
+       alert("You must enter present students roll no to continue ...!");
+    }else{
+        // append data to the array
     numArr.push(inputText);
 
     var pval = "";
@@ -19,9 +22,16 @@ function pushData() {
     document.getElementById("inputText").value = "";
 
     console.log(numArr);
+    }
+    
+    
 }
-// This function is used to
+
+
+// This function is used to find missing numbers
 let missingNumbers = (a, l = true) => Array.from(Array(Math.max(...a)).keys()).map((n, i) => a.indexOf(i) < 0 && (!l || i > Math.min(...a)) ? i : null).filter(f => f);
+
+
 
 // Creating an array to get present student roll numbers
 var numArr = [];
@@ -53,3 +63,11 @@ function reset(){
 
      console.log(numArr);
 }
+
+
+// On presss enter key add elements into an array
+document.getElementById("addbtn").addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+		return true;
+    }
+});

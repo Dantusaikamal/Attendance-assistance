@@ -3,6 +3,9 @@
   padding: 0;
 }
 
+body{
+  overflow: hidden;
+}
 //variables for colors
 $bgcolor : #242582;
 $primar-color : #F64c72;
@@ -26,7 +29,7 @@ $secondar-color: #f7345e;
 
 header {
   background-color: $bgcolor;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -40,6 +43,7 @@ header {
   align-items: center;
 
   .content-container {
+    position: relative;
 
     .heading {
       color: white;
@@ -50,7 +54,7 @@ header {
     }
 
     #inputText {
-      width: 460px;
+      width: 465px;
       padding: 20px 10px 20px 20px;
       font-size: 16px;
       font-weight: 600;
@@ -61,13 +65,14 @@ header {
     }
 
     .addbtn {
-      width: 200px;
+      position: absolute;
+      right: 0;      
+      width: 201px;
       padding: 20px;
-      height: 64px;
+      height: 58px;
       background-color: $primar-color;
       border: none;
       outline: none;
-      transform: translateX(-20px);
       font-size: 15px;
       font-weight: 600;
       color: #fff;
