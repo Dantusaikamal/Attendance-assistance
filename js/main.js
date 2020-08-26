@@ -44,7 +44,6 @@ function result() {
 
 }
 
-
 // Function to reset 
 function reset(){
     // remove array elements

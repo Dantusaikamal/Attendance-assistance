@@ -5,6 +5,8 @@
 
 body{
   overflow: hidden;
+  height: 100vh;
+  width: 100vw;
 }
 //variables for colors
 $bgcolor : #242582;
@@ -50,7 +52,31 @@ header {
       font-size: 50px;
       font-weight: 600;
       text-align: center;
-      margin: 50px;
+      margin-top: 30px;
+      margin-bottom: 16px;
+    }
+    .range-content{
+      margin-bottom: 16px;
+      display: flex;
+      justify-content: space-between;
+
+      input[type = number]{
+        width: 50px;
+        height: 20px;
+        padding: 5px 0 5px 0;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        margin-left: 5px;
+        font-weight: 600;
+        font-size: 16px;
+        text-align: center;
+      }
+      .text{
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+      }
     }
 
     #inputText {
@@ -58,7 +84,7 @@ header {
       padding: 20px 10px 20px 20px;
       font-size: 16px;
       font-weight: 600;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
       border-bottom-left-radius: 16px;
       outline: none;
       border: none;
@@ -111,7 +137,6 @@ header {
       border-top-left-radius: 16px;
       border-bottom-right-radius: 16px;
       padding: 10px;
-
     }
     #para{
       margin-bottom: 50px;
