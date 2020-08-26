@@ -5,6 +5,8 @@
 
 body {
   overflow: hidden;
+  height: 100vh;
+  width: 100vw;
 }
 
 header {
@@ -44,7 +46,37 @@ header {
   font-size: 50px;
   font-weight: 600;
   text-align: center;
-  margin: 50px;
+  margin-top: 30px;
+  margin-bottom: 16px;
+}
+
+#container .content-container .range-content {
+  margin-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#container .content-container .range-content input[type=number] {
+  width: 50px;
+  height: 20px;
+  padding: 5px 0 5px 0;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  margin-left: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+}
+
+#container .content-container .range-content .text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 #container .content-container #inputText {
@@ -52,7 +84,7 @@ header {
   padding: 20px 10px 20px 20px;
   font-size: 16px;
   font-weight: 600;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   border-bottom-left-radius: 16px;
   outline: none;
   border: none;

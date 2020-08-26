@@ -13,14 +13,22 @@
         <section id="container">
             <div class="content-container">
                 <h1 class="heading">Find Absent students</h1>
-
+                
+                <div class="range-content">
+                    <div class="startRollNo">
+                    <span class="text">Starting Roll No:</span><input type="number" autocomplete="off">
+                </div>
+                <div class="lastRollNo">
+                    <span class="text">Last Roll No:</span><input type="number" autocomplete="off">
+                </div>
+            </div>
 
                 <input type="number" name="text" id="inputText" placeholder="Present students" autocomplete="off" required />
                 <button onclick="pushData()" class="addbtn" id="addbtn">Add present students</button>
                 <p class="subHeading1">Present Students Roll No:</p>
 
 
-                <div class="para">
+                <div class="para" >
                     <p id="pText"></p>
                 </div>
                 <div class="btn_container">
@@ -30,8 +38,8 @@
                 </div>
 
                 <p class="subHeading2">Absent students Roll No: </p>
-                <div class="para" id="para">
-                    <p id="missingrollnum"></p>
+                <div class="para" id="para" >
+                    <p id="missingrollnum" ></p>
                 </div>
             </div>
 
