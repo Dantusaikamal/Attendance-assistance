@@ -73,6 +73,25 @@ header {
   text-align: center;
 }
 
+#container .content-container .range-content button {
+  width: 70px;
+  padding: 6.5px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #06ad00;
+  cursor: pointer;
+}
+
+#container .content-container .range-content button:hover {
+  background-color: #09ff00;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 #container .content-container .range-content .text {
   color: #fff;
   font-size: 18px;
