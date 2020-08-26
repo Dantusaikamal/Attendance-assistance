@@ -71,6 +71,24 @@ header {
         font-weight: 600;
         font-size: 16px;
         text-align: center;
+        
+      }
+      button{
+        width: 70px;
+        padding: 6.5px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        background-color: #06ad00;
+        cursor: pointer;
+
+        &:hover{
+          background-color: #09ff00;
+          transition: 0.5s;
+        }
       }
       .text{
         color: #fff;
